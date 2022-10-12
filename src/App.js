@@ -1,15 +1,17 @@
-import logo from "./images/ED-Horizontal_2-color_Logo.png";
 import "./App.css";
-import { Lists } from "./components";
+import { Lists, MyNav, Home } from "./components";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <Lists />
-      </header>
+    <div>
+      <MyNav expand="sm" />
+      <div className="App">
+        <Routes>
+          <Route path="*" element={<Home />} />
+          <Route path="/lists" element={<Lists />} />
+        </Routes>
+      </div>
     </div>
   );
 }
