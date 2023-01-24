@@ -19,7 +19,24 @@
   color: #1f2f36;
 }
 
-.App-link {
-  color: #1DA1F2;
+
+
+
+table {
+  text-align: left;
 }
 
+:root {
+--bs-primary: #0078c8;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #035f84;
+  
+}
+
+.App-link {
+  color: var(--bs-primary)
+}
