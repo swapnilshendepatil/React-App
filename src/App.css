@@ -40,3 +40,27 @@ table {
 .App-link {
   color: var(--bs-primary)
 }
+.list-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+}
+.input{
+  width: 100%;
+}
+.cardheader{
+  text-align: left;
+}
+.tabledata{
+  display: flex;
+  justify-content: space-between;
+}
+.tabledata span{
+  color: #d73838;
+}
+.tabledata span:hover{
+  color: #850000;
+}
+.clrBtn{
+  margin-left: 80%;
+}
